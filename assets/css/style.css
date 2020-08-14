@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+iframe {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border: none;
+}
