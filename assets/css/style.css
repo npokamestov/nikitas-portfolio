@@ -3,8 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color: red;
+    --secondary-color: white;
+    --tertiary-color: blue;
+}
+body {
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+header {
+    z-index: 9999;
+}
 iframe {
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     border: none;
+}
+.flex-row {
+    display: flex;
 }
