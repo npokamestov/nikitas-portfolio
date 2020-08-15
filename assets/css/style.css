@@ -11,6 +11,10 @@
 body {
     color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+.flex-row {
+    display: flex;
 }
 header {
     padding: 10px 30px 10px 0px;
@@ -64,6 +68,24 @@ nav ul li a:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
     border-radius: 15px;
+}
+.hero {
+    background-image: url("../images/hero.png");
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    min-height: 40vh;
+    background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.hero h2 {
+    margin: 20px 60px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: var(--secondary-color);
 }
 .intro {
     width: 100%;
@@ -129,22 +151,8 @@ footer nav ul li {
     display: inline;
     margin: 10px 5px;
 }
-.hero {
-    background-image: url("../images/hero.png");
-    background-size: cover;
-    width: 100vw;
-    height: 20vh;
-    background-position: bottom;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
 iframe {
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     border: none;
-}
-.flex-row {
-    display: flex;
 }
