@@ -8,10 +8,12 @@
         <link rel="icon" type="image/png" href="./assets/images/favicon-package/favicon.png">
 </head>
 <body>
+    <!--Symantic structure using header-->
     <header>
         <h1>
             <a href="index.html">Nikita's Portfolio</a>
         </h1>
+        <!--Symantic structure using nav for links-->
         <nav>
             <ul>
                 <li>
@@ -30,49 +32,63 @@
         </nav>
     </header>
 
+    <!--Symantic structure using section to group of part of the page-->
     <section class="hero">
         <div class="hero-description">
             <h2>Dive into my first site</h2>
         </div>
     </section>
 
+    <!--Symantic structure using section to group of part of the page-->
+    <!--flexbox used to more easily adjust content and have an overall more dynamic layout-->
     <section class="intro-container">
-        <h2 class="intro-item title"><span id="about-me"></span>About Me</h2>
+        <!--flexbox item-->
+        <h2 class="intro-item title">
+            <!--span used to offset scroll when relevent link is clicked-->
+            <span id="about-me"></span>
+            About Me
+        </h2>
+        <!--flexbox item-->
         <p class="intro-item text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae reiciendis consectetur repellat illum ut itaque natus doloremque vero numquam facere, reprehenderit exercitationem eos, libero architecto vel in facilis perspiciatis.
         </p>
     </section>
 
+    <!--Symantic structure used to identify main part of the page-->
+    <!--flexbox used to more easily adjust content and have an overall more dynamic layout-->
     <main id="work" class="applications-container">
+        <!--flexbox item-->
         <h2 class="applications-item title">Work</h2>
+            <!--flexbox item-->
             <div class="applications-item application-grid">
+                <!--CSS grid container-->
                 <div class="grid-container">
-
+                    <!--CSS grid item-->
                     <a href="https://npokamestov.github.io/run-buddy" class="grid-item item-1">
                     <div>
                         <h3>Run Buddy</h3>
                         <h4>HTML / CSS</h4>
                     </div>
                     </a>
-
+                    <!--CSS grid item-->
                     <a href="" class="grid-item item-2">
                     <div>
                         <h3>Item-2</h3>
                     </div>
                     </a>
-
+                    <!--CSS grid item-->
                     <a href="" class="grid-item item-3">
                     <div >
                         <h3>Item-3</h3>
                     </div>
                     </a>
-
+                    <!--CSS grid item-->
                     <a href="" class="grid-item item-4">
                     <div>
                         <h3>Item-4</h3>
                     </div>
                     </a>
-
+                    <!--CSS grid item-->
                     <a href=""  class="grid-item item-5">
                     <div>
                         <h3>Item-5</h3>
@@ -83,8 +99,12 @@
         </div>
     </main>
 
+    <!--Symantic structure using footer-->
+    <!--flexbox used to more easily adjust content and have an overall more dynamic layout-->
     <footer id="contact" class="contact-container">
+        <!--flexbox item-->
         <h2 class="contact-item title"> Contact Me</h2>
+        <!--flexbox item-->
         <nav class="contact-item links">
             <div class="circular-img">
                 <img src="./assets/images/recent-photo.png" 

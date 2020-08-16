@@ -1,8 +1,10 @@
+/* Removes page defaults for a clean css workspace */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* css variables for color to more easily update page when needed */
 :root {
     --primary-color: #003153;
     --secondary-color: #00FFFF;
@@ -12,9 +14,6 @@ body {
     color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
     height: 100%;
-}
-.flex-row {
-    display: flex;
 }
 header {
     padding: 10px 30px 10px 0px;
@@ -64,6 +63,7 @@ nav ul li a {
     font-size: 10px;
     border-bottom: 5px solid var(--secondary-color);
 }
+/* used to highlight links when moving mouse over them */
 nav ul li a:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
@@ -72,6 +72,7 @@ nav ul li a:hover {
 h2 {
     position: relative;
 }
+/* used to adjust scroll distance for desired section due to sticky header blocking some section view */
 h2 span {
     position: absolute;
     top: -120px;
@@ -94,12 +95,14 @@ h2 span {
     border-radius: 10px;
     background: var(--secondary-color);
 }
+/* flexbox used to more easily adjust content and have an overall more dynamic layout */
 .intro-container {
     display: flex;
     justify-content: space-around;
     width: 100%;
     background-color: var(--tertiary-color);
 }
+/* flexbox item */
 .intro-item.title {
     display: flex;
     width: 25%;
@@ -111,6 +114,7 @@ h2 span {
     text-align: right;
    
 }
+/* flexbox item */
 .intro-item.text {
     display: flex;
     justify-content: flex-start;
@@ -126,6 +130,7 @@ h2 span {
     width: 100%;
     background-color: var(--tertiary-color);
 }
+/* flexbox item */
 .applications-item.title {
     display: flex;
     width: 25%;
@@ -136,6 +141,7 @@ h2 span {
     border-right: 4px solid var(--primary-color);
     text-align: right;
 }
+/* flexbox item */
 .applications-item.application-grid {
     display: flex;
     justify-content: flex-start;
@@ -145,6 +151,7 @@ h2 span {
     padding: 10px;
     text-align: left;
 }
+/* css grid used to showcase multiple "windows" into other sites */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -152,6 +159,7 @@ h2 span {
     grid-gap: 20px;
     width: 100%;
 }
+/* genral grid item styles */
 .grid-item {
     display: flex;
     justify-content: flex-start;
@@ -163,9 +171,11 @@ h2 span {
     background-position: center;
     position: relative;
 }
+/* used to give feedback of link when hovering over grid item */
 .grid-item:hover {
     border: 3px solid var(--secondary-color);
 }
+/* grid item caption */
 .grid-item div {
     margin-top: auto;
     margin-bottom: 10px;
@@ -173,27 +183,32 @@ h2 span {
     text-align: center;
     background-color: rgba(0, 255, 255, 0.8);
 }
+/* grid item */
 .item-1 {
     grid-column: span 4;
     grid-row: span 4;
     background-image: url(../images/run-buddy-scsh.png);
     height: 300px;
 }
+/* grid item */
 .item-2 {
     grid-column: span 2;
     grid-row: span 2;
     background-image: url(../images/coming-soon.png);
 }
+/* grid item */
 .item-3 {
     grid-column: span 2;
     grid-row: span 2;
     background-image: url(../images/coming-soon.png);
 }
+/* grid item */
 .item-4 {
     grid-column: span 2;
     grid-row: span 2;
     background-image: url(../images/coming-soon.png);
 }
+/* grid item */
 .item-5 {
     grid-column: span 2;
     grid-row: span 2;
@@ -204,6 +219,7 @@ h2 span {
     width: 100%;
     background-color: var(--primary-color);
 }
+/* flexbox item */
 .contact-item.title {
     display: flex;
     width: 25%;
@@ -214,6 +230,7 @@ h2 span {
     text-align: right;
     color: var(--secondary-color);
 }
+/* flexbox item */
 .contact-item.links {
     display: flex;
     width: 75%;
@@ -230,11 +247,7 @@ h2 span {
 .contact-item.links ul li {
     margin: 10px;
 }
-iframe {
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    border: none;
-}
+/* used to make recent photo desired shape and size */
 .circular-img {
     display: inline-block;
     max-width: 100px;
@@ -245,10 +258,17 @@ iframe {
     border-radius: 50%;
     overflow: hidden;
 }
+/* used to make recent photo desired shape and size */
 img {
-    width: auto;
+    width: 125%;
     height: 100%;
     margin-left: -10%;
+}
+/* styling to make pdf fill whole viewport */
+iframe {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border: none;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {

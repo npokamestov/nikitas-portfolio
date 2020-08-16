@@ -10,6 +10,9 @@ A website that showcases my deployed applications from school and freelancing.
 ## Website
 https://npokamestov.github.io/nikitas-portfolio/
 
+## Screenshot
+![](./assets/images/site-screenshot.png)
+
 ## Contribution
 Made with ❤️ by Nikita Pokamestov
 
