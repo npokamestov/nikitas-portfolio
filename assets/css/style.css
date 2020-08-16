@@ -235,19 +235,101 @@ iframe {
     height: -webkit-fill-available;
     border: none;
 }
-.img {
+.circular-img {
+    display: inline-block;
+    max-width: 100px;
     min-width: 100px;
+    max-height: 100px;
     min-height: 100px;
-    background-image: url(../images/recent-photo.png);
-    background-size: cover;
-    background-position: center;
+    position: relative;
     border-radius: 50%;
+    overflow: hidden;
+}
+img {
+    width: auto;
+    height: 100%;
+    margin-left: -10%;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
-        padding-bottom: 0;
         justify-content: center;
+        padding-right: 10px;
+    }
+    header h1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .intro-container {
+        flex-flow: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .intro-item.title {
+        width: 30%;
+        justify-content: center;
+        text-align: center;
+        border-right: unset;
+        border-bottom: 4px solid var(--secondary-color);
+    }
+    .intro-item.text {
+        width: 90%;
+        text-align: center;
+    }
+    .applications-container {
+        flex-flow: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .applications-item.title {
+        width: 30%;
+        justify-content: center;
+        text-align: center;
+        border-right: unset;
+        border-bottom: 4px solid var(--secondary-color);
+    }
+}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header {
         position: relative;
+    }
+    h2 span {
+        top: 0px;
+    }
+    .contact-container {
+        flex-flow: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .contact-item.title {
+        width: 30%;
+        justify-content: center;
+        text-align: center;
+        border-right: unset;
+        border-bottom: 4px solid var(--secondary-color);
+    }
+    .contact-item.links {
+        flex-wrap: wrap;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact-item.links ul {
+        justify-content: center;
+    }
+    .circular-img {
+        display: block;
     }
 }
