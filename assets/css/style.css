@@ -28,7 +28,7 @@ header {
     top: 0;
     z-index: 9999;
 }
-header a {
+a {
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -87,153 +87,134 @@ nav ul li a:hover {
     border-radius: 10px;
     background: var(--secondary-color);
 }
-.column {
-    float: left;
-}
-.left {
-    width:25%;
-}
-.right {
-    width: 75%;
-}
-.row {
+.intro-container {
     display: flex;
-}
-.column.left {
-    text-align: right;
-    border-right: 5px solid;
-    margin-right: 10px;
-}
-.contact.column.left {
-    text-align: right;
-    border-right: 5px solid var(--secondary-color);
-    margin-right: 10px;
-}
-.applications h2 {
-    color: var(--primary-color);
-    font-size: 30px;
-    justify-content: flex-end;
-}
-.applications div h2 {
-    flex-grow: 1;
-    padding-right: 10px;
-    align-items: flex-start;
-}
-.intro {
-    width: 100%;
-    background-color: var(--tertiary-color);
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.intro h2 {
-    color: var(--primary-color);
-    font-size: 30px;
-    justify-content: flex-end;
-}
-.intro div h2{
-    flex-grow: 1;
-    padding-right: 10px;
-    align-items: flex-start;
-}
-.intro div p {
-    flex-grow: 1;
-    margin: 7px 0px;
-}
-.applications {
-    background-color: var(--tertiary-color);
-    width: 100%;
-    padding: 40px 35px;
     justify-content: space-around;
-    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--tertiary-color);
 }
-.applications a {
-    text-decoration: none;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-}
-.application-flex-container-title {
+.intro-item.title {
+    display: flex;
     width: 25%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.flex-item-title {
-    width: 100%;
-    border-radius: 10px;
-    border: 4px solid var(--primary-color);
-    background-color: var(--secondary-color);
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    background-image: url(../images/favicon.png);
-    background-size: cover;
-    background-position: center;
-    padding: 20px 0;
-    min-height: 100px;
-    display: flex;
-}
-.application-flex-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.flex-item {
-    width: 45%;
-    border-radius: 10px;
-    border: 4px solid var(--primary-color);
-    background-color: var(--secondary-color);
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    background-image: url(../images/favicon.png);
-    background-size: cover;
-    background-position: center;
-    padding: 20px 0;
-    min-height: 100px;
-    display: flex;
-    flex-wrap: wrap;
-}
-footer {
-    background-color: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
     justify-content: flex-end;
+    align-content: flex-start;
+    border-right: 4px solid var(--primary-color);
+    text-align: right;
+   
 }
-footer div h2 {
-    flex-grow: 1;
-    padding-right: 10px;
-    align-items: flex-start;
+.intro-item.text {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 75%;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
 }
-footer .column.left {
-    border-right: 5px solid var(--secondary-color);
-}    
-footer a {
-    text-decoration: none;
+.applications-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--tertiary-color);
+}
+.applications-item.title {
+    display: flex;
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    justify-content: flex-end;
+    align-content: flex-start;
+    border-right: 4px solid var(--primary-color);
+    text-align: right;
+}
+.applications-item.application-grid {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 75%;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+}
+.grid-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 15px;
+}
+.grid-item div {
+    margin-top: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.8);
+}
+.item-1 {
+    grid-column: span 4;
+    grid-row: span 4;
+    background-image: url(../images/run-buddy-scsh.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.item-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.item-3 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.item-4 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.item-5 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.contact-item.title {
+    display: flex;
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    justify-content: flex-end;
+    align-content: flex-start;
+    border-right: 4px solid var(--secondary-color);
+    text-align: right;
     color: var(--secondary-color);
 }
-footer nav {
-    flex-grow: 1;
-    margin: 7px 0px;
-}
-footer nav ul {
+.contact-item.links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    width: 75%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
 }
-footer nav ul li {
-    display: inline;
-    margin: 10px 5px;
+.contact-item.links ul {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
 }
 iframe {
     width: -webkit-fill-available;
