@@ -159,6 +159,12 @@ h2 span {
     border: 3px solid var(--primary-color);
     border-radius: 10px;
     font-size: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.grid-item:hover {
+    border: 3px solid var(--secondary-color);
 }
 .grid-item div {
     margin-top: auto;
@@ -171,37 +177,27 @@ h2 span {
     grid-column: span 4;
     grid-row: span 4;
     background-image: url(../images/run-buddy-scsh.png);
-    background-size: cover;
-    background-position: center center;
     height: 300px;
 }
 .item-2 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url(../images/favicon.png);
-    background-size: cover;
-    background-position: center center;
+    background-image: url(../images/coming-soon.png);
 }
 .item-3 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url(../images/favicon.png);
-    background-size: cover;
-    background-position: center center;
+    background-image: url(../images/coming-soon.png);
 }
 .item-4 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url(../images/favicon.png);
-    background-size: cover;
-    background-position: center center;
+    background-image: url(../images/coming-soon.png);
 }
 .item-5 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url(../images/favicon.png);
-    background-size: cover;
-    background-position: center center;
+    background-image: url(../images/coming-soon.png);
 }
 .contact-container {
     display: flex;
@@ -238,4 +234,20 @@ iframe {
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     border: none;
+}
+.img {
+    min-width: 100px;
+    min-height: 100px;
+    background-image: url(../images/recent-photo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
 }
