@@ -200,7 +200,7 @@ h2 span {
 .item-3 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url(../images/coming-soon.png);
+    background-image: url(../images/langmentor.png);
 }
 /* grid item */
 .item-4 {
